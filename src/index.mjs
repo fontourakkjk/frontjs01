@@ -16,13 +16,27 @@ function calcular() {
   const n1 = Number(numero1.value); // CONVERSÃO P/ NUMBER
   const n2 = Number(numero2.value); // CONVERSÃO P/ NUMBER
   soma.innerHTML = `a soma de ${n1} e ${n2} é : ${n1 + n2}`;
-  subtracao.innerHTML = `a soma de ${n1} e ${n2} é : ${n1 - n2}`;
-  divisao.innerHTML = `a soma de ${n1} e ${n2} é : ${n1 / n2}`;
-  multiplicacao.innerHTML = `a soma de ${n1} e ${n2} é : ${n1 * n2}`;
+  subtracao.innerHTML = `a subtracao de ${n1} e ${n2} é : ${n1 - n2}`;
+  multiplicacao.innerHTML = `a multiplicacao de ${n1} e ${n2} é : ${n1 * n2}`;
+  divisao.innerHTML = `a divisao de ${n1} e ${n2} é : ${n1 / n2}`;
+}
+function LimparFormulario() {
+  alert("limpou...");
+  const n1= numero1 value;
+  const n2= numero2 value;
+  if (n1|| n2) {
+    const form = document.querySelector("form")
+    form.reset();
+    document.querySelector("#numero1").focus();
+  }
 }
 
 // ADICIONAR ESCUTADOR DE EVENTOS
 btnCalcular.addEventListener("click", function (evento) {
   evento.preventDefault();
   alert(calcular());
+});
+btnLimpar.addEventListener("click", function (evento) {
+  evento.preventDefault();
+  limparFormulario();
 });

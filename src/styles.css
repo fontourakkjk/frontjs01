@@ -11,16 +11,35 @@ body {
   padding: 20px;
   border-radius: 8px;
 }
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
 input {
   margin: 8px 0;
   padding: 8px;
 }
+.botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.mostrar {
+  display: flex;
+}
+.esconder {
+  display: none;
+}
 #btn-calcular {
+  width: 50%;
+  margin: 0 4px;
   background-color: #ee00ff;
   color: #620a88;
   padding: 8px;
   border-radius: 4px;
   font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 .resultados {
   background-color: #f0dcdc;
@@ -28,4 +47,15 @@ input {
   padding: 20px;
   border-radius: 8px;
   margin-top: 16px;
+}
+#btn-Limpar {
+  width: 50%;
+  margin: 0 4px;
+  background-color: #a952cc;
+  color: #120122;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
